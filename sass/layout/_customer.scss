@@ -1,0 +1,33 @@
+.customer-icons {
+    display: inline-flex;
+}
+.customer-icons__item {
+    border: 1px solid #AFB1B8;
+    border-radius: 4%;
+    height: 92px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    fill: #AFB1B8;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        &:focus, 
+        &:hover {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+            fill: var(--accent-color);
+        }
+}
+
+.customer-icons__svg {
+    width: 106px;
+    height: 60px;
+    fill: inherit;
+}
