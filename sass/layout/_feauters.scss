@@ -1,49 +1,62 @@
-.company-values {
-    display: none;
+.feauters {
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 .feauters__list {
+  margin-top: -30px;
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+.feauters__tool {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color-filter);
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 .feauters__item {
-    width: 270px;
-
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
+  width: 100%;
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    // margin-top: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+  // &:not(:first-child) {
+  //   margin-left: 30px;
+  // }
 }
 
-.feauters {
-    padding-top: 94px;
-    .features__header {
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 16px;
-        letter-spacing: 0.03em;
-        text-align: left;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-    }
-    .features__content {
-        color: var(--primary-text-color);
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.03em;
-        text-align: left;  
-    }
+.feauters__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
-.features__box__color {
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: #F5F4FA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.features-icon__svg {
-    width: 70px;
-    height: 70px;
-
+.feauters__text {
+  align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--color-grey);
+  // margin-bottom: 30px;
 }

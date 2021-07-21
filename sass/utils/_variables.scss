@@ -1,11 +1,18 @@
-:root{
-    --primary-text-color: #757575;
-    --title-text-color: #212121;
-    --accent-color: #2196f3;
-    --primary-white-color: #FFFFFF;
-    --primary-bg-color: #F5F4FA;
-}
-body {
-    font-family:'Roboto', sans-serif, 'Raleway', sans-serif;
-    color: var(--title-text-color);
+:root {
+  --color-grey: rgba(117, 117, 117, 1);
+  --black-color: rgba(33, 33, 33, 1);
+  --blue-color: rgba(33, 150, 243, 1);
+  --color-white: rgb(255, 255, 255, 1);
+  --background-section: rgb(47, 48, 58);
+  --background-ourTeam: rgb(245, 244, 250, 1);
+  --background-color-button: rgb(33, 150, 243);
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --background-color-filter: rgba(245, 244, 250, 1);
+  --background-color-header: rgba(255, 255, 255, 1);
+  --card-set-gap: 30px;
+  --background-Hero: rgba(47, 48, 58, 0.4);
+  --background-footer-icons: rgba(255, 255, 255, 0.1);
+  --color-icons: rgb(175, 177, 184, 1);
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  --border--cards: rgb(238, 238, 238);
 }

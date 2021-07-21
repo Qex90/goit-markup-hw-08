@@ -1,0 +1,104 @@
+/* Иконки- team */
+
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 206px;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.social__link {
+  fill: var(--color-icons);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  transition: fill 250ms var(--cubic-bezier);
+  background: 250ms var(--cubic-bezier);
+}
+
+.social__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social__link {
+  &:hover,
+  &:focus {
+    fill: var(--color-white);
+    background: var(--blue-color);
+    border-radius: 50%;
+  }
+}
+
+/* Иконки- footer */
+
+.footer-icon__box {
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+}
+
+.footer-icon__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.footer-icon__list {
+  width: 206px;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
+}
+
+.footer-icon__svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-white);
+}
+
+.footer-icon__link {
+  display: flex;
+  background-color: var(--background-footer-icons);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms var(--cubic-bezier);
+}
+
+.footer-icon__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.footer-icon__link {
+  &:hover,
+  &:focus {
+    fill: var(--color-white);
+    background: var(--blue-color);
+    border-radius: 50%;
+  }
+}

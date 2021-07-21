@@ -1,0 +1,159 @@
+.nav {
+  display: flex;
+
+  .nav-list__link--studio.current {
+    color: var(--blue-color);
+  }
+}
+
+.nav {
+  @media screen and (min-width: 767px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+
+  > .nav-list__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+.nav-list__item {
+  display: block;
+}
+
+.nav-list__link--studio {
+  position: relative;
+  text-decoration: none;
+  color: var(--black-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  transition: color 250ms var(--cubic-bezier);
+
+  &.current {
+    &::after {
+      margin-top: 32px;
+      display: block;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background: #2196f3;
+      border-radius: 2px;
+    }
+  }
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+  }
+}
+
+.contact__list > .contact__item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+/* Портфолио */
+
+.nav-list__link--portfolio.current {
+  &::after {
+    margin-top: 32px;
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+}
+.nav .nav-list__link--portfolio.current {
+  color: var(--blue-color);
+}
+
+.nav-list__link--portfolio {
+  color: var(--black-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  position: relative;
+  transition: color 250ms var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+  }
+}
+
+/* Контакты */
+
+.contact__list {
+  display: flex;
+  margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+  }
+}
+
+.nav-list__link--contact {
+  color: var(--black-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+}
+
+/* почта */
+
+.contact__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+  color: var(--color-grey);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  transition: color 250ms var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+  }
+}
